@@ -197,9 +197,9 @@ class OOP:
             time.sleep(1)
             
 keep_alive()
-TDS_token = os.getev("Token")
+TDS_token = os.getenv("Token")
 idfb = 61554282509974
-cookie = os.getev("Cookie")
+cookie = os.getenv("Cookie")
 seconds = 120
 answer = 120
 chongBlock = 3
