@@ -200,9 +200,9 @@ keep_alive()
 TDS_token = os.getenv("Token")
 idfb = 61554282509974
 cookie = os.getenv("Cookie")
-seconds = 120
-answer = 120
-chongBlock = 3
+seconds = 3 #time delay
+answer = 120 #Count nv
+chongBlock =120 #Time antiblock
 api = OOP(TDS_token, idfb, cookie)
 api.layThongTinAcc()
 api.datCauHinh()
