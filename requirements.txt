@@ -1,5 +1,3 @@
-Flask
-thread
 requests
 datetime
 
