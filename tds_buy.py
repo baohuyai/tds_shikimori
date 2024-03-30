@@ -1,4 +1,5 @@
 import requests, json, time, datetime, html, re, os, sys
+from keep_alive import keep_alive
 class OOP:
     def __init__(self, TDS_token, idfb, cookie):
         self.TDS_token = TDS_token
@@ -198,11 +199,13 @@ class OOP:
 TDS_token = os.getenv("Token")
 idfb = 61554282509974
 cookie = os.getenv("Cookie")
-seconds = 3 #time delay
+seconds = 1 #time delay
 answer = 100 #Count nv
-chongBlock =60 #Time antiblock
+chongBlock = 30 #Time antiblock
 api = OOP(TDS_token, idfb, cookie)
 api.layThongTinAcc()
 api.datCauHinh()
+keep_alive()
 while(True):
     api.layNhiemVu()
+
